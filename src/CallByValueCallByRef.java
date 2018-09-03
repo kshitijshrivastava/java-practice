@@ -26,6 +26,19 @@ public class CallByValueCallByRef {
 
 	}
 	
+	
+	public int tripleCounter(String str) {
+		  int length = str.length();
+		  int counter = 0;
+		  
+		  for (int i = 0; i < length-2; i++){
+		    char tmp = str.charAt(i);
+		    if (tmp == str.charAt(i+1) && tmp == str.charAt(i+2))
+		      counter++;
+		  }
+		  return counter;
+		}
+	
 	public int sum(int x, int y)
 	{
 		x=10;
